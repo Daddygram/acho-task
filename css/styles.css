@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'bannerCaps';
+    src: url(../fonts/bpg_banner_caps.ttf)  format('truetype');
+}
+
+@font-face {
+    font-family: 'notoSans';
+    src: url(../fonts/NotoSansGeorgian.ttf)  format("truetype");
+}
+
+@layer base {
+    div {
+        box-sizing: border-box;
+    }
+    h1, h2, h3, h4, button {
+        font-family: 'bannerCaps', sans-serif;
+    }
+    h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+        @apply font-medium uppercase;
+    }
+    h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        @apply font-medium uppercase;
+    }
+    h3 {
+        font-size: 2rem;
+        line-height: 2.625rem;
+        @apply font-medium uppercase;
+    }
+    h4 {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        @apply font-medium uppercase;
+    }
+    .p1, .p2, .p3, .p4 {
+        font-family: 'notoSans', sans-serif;
+    }
+    .p1 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        @apply font-medium
+    }
+    .p2 {
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        @apply font-medium
+    }
+    .p3 {
+        font-size: 0.75rem;
+        line-height: 0.875rem;
+        @apply font-medium
+    }
+    .p4 {
+        font-size: 0.625rem;
+        line-height: 0.875rem;
+        @apply font-medium
+    }
+    .flexCenter {
+        @apply flex justify-center items-center;
+    }
+    .flexBetween {
+        @apply flex justify-between items-center;
+    }
+    .flexAround {
+        @apply flex justify-around items-center;
+    }
+}
