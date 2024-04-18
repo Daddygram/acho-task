@@ -72,3 +72,14 @@
         @apply flex justify-around items-center;
     }
 }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+    z-index: 10;
+}
+.dropdown-menu.active {
+    display: block;
+}
