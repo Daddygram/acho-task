@@ -68,6 +68,6 @@
 }
 @media (min-width: 768px) {
     .customGrid {
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr !important;
     }
 }
