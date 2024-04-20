@@ -4,15 +4,18 @@
 
 @font-face {
     font-family: 'bannerCaps';
-    src: url(../fonts/bpg_banner_caps.ttf)  format('truetype');
+    src: url(/build/fonts/bpg_banner_caps.ttf)  format('truetype');
 }
 
 @font-face {
     font-family: 'notoSans';
-    src: url(../fonts/NotoSansGeorgian.ttf)  format("truetype");
+    src: url(/build/fonts/NotoSansGeorgian.ttf)  format("truetype");
 }
 
 @layer base {
+    body {
+        font-family: 'bannerCaps', sans-serif;
+    }
     div {
         box-sizing: border-box;
     }

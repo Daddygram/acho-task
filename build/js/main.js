@@ -4,8 +4,9 @@ function changeMainPicture(pictureSrc) {
 }
 
 // Like Button
-function  addToFavorites() {
-    document.getElementById('likeBtn').classList.toggle("fill-red-700")
+function addToFavorites() {
+    const likeBtn = document.getElementById('likeBtn');
+    likeBtn.classList.toggle("text-red-700"); // Toggle the class to change the stroke color
 }
 
 // dropdown menu for colors
